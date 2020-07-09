@@ -1,12 +1,44 @@
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 40px;
+    background-color: #fff;
+    margin:0 5vw;
+    padding:3vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
 input {
-    padding: 5px 20px;
-    width: 100%;
+    padding: 3vh 3vw;
     line-height: 16px;
     margin: 10px 0;
+    font-size:3vh;
+}
+
+input[type="submit"]{
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius:2vw;
+    transition : all 0.3s ease;
+}
+input[type="submit"]:hover{
+    border:1px blue solid;
+    background-color: white;
+    color:blueviolet;
+}
+
+input[type="submit"]:focus{
+    background-color: blueviolet;
+    color:white;
+    border:none;
+    outline:none;
+}
+
+@media(max-width:900px){
+    input{
+        color:red;
+        font-size:5vh;
+    }
 }

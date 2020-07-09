@@ -1,14 +1,37 @@
+
+*{
+    margin:0
+}
+
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
+    background-color:#fafbfc;
+    color:white;
+    margin-top:3vw;
 }
 
-main {
-    flex: 2;
+
+h1{
+    color:black;
+    text-align: center;
+    font-size:7vw;
+    margin-bottom: 3vh;
 }
 
-section {
-    max-width: 800px;
-    margin: 50px auto;
+.display{
+    min-height: 20vh;
+    padding:2vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-top : 5vh;
+    margin : 5vh 5vw;
+    text-align:center;
+    color:black;
+    font-size:3vw;
+    background-color:#fff;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.3);
 }
