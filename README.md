@@ -1,29 +1,21 @@
-# Webbpack Express Example App
+# Project Instructions
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
+A Webpack Project with dynamic ui updates, natural language processing with  seperate production mode and developement
 
-If you want to follow along, start from branch 0-initial-setup. Each branch in this project is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also roughly a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+The project showcases the following
+-  Webpack
+- Sass styles
+- Webpack Loaders and Plugins
+- Creating layouts and page design
+- Service workers
+- Using APIs and creating requests to external urls
 
-## What we will cover
+About Natural Language Processing.
+On top of that, I want to introduce you to the topic of Natural Language Processing. NLPs leverage machine learning and deep learning create a program that can interpret natural human speech. Systems like Alexa, Google Assistant, and many voice interaction programs are well known to us, but understanding human speech is an incredibly difficult task and requires a lot of resources to achieve. Full disclosure, this is the Wikipedia definition, but I found it to be a clear one:
 
-We will cover:
+> Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial intelligence
+concerned with the interactions between computers and human (natural) languages, in particular how to program computers to
+process and analyze large amounts of natural language data.
 
-- Webpack entry point
-- Webpack output and dist folder
-- Webpack Loaders
-- Webpack Plugins
-- Webpack Mode
-- Tools for convenient Webpack development
+You could spend years and get a masters degree focusing on the details of creating NLP systems and algorithms. Typically, NLP programs require far more resources than individuals have access to, but a fairly new API called Aylien has put a public facing API in front of their NLP system. We will use it in this project to determine various attributes of an article or blog post.
 
-## Get Up and Running
-
-Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
-
-```
-git clone -- git@github.com:[your-user-name]/webpack-express.git --
-```
-
-`cd` into your new folder and run:
-- ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in server.js
