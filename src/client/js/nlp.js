@@ -1,6 +1,6 @@
 
 
-async function evaluateNLP(url='/evaluate',data={value:'This is amazin'}){
+async function evaluateNLP(url='/evaluate',data={value:'This is amazing'}){
     const response = await fetch(url,{
         method:'POST',
         credentials:'same-origin',
