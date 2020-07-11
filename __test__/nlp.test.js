@@ -1,19 +1,16 @@
 import { evaluateNLP } from "../src/client/js/nlp";
-import "babel-polyfill"
-
-//const evaluateNLP = require("../src/client/js/nlp")
+import "babel-polyfill";
 
 
+console.log("Make sure the server is running");
 
-test('Returns Poistive for a positive meaning sentence',()=>{
-    
-    expect(simplify("The movie was stunning")).toEqual("positive");
-
+test('The setence is a positive sentence', async () => {
+    const data = await evaluateNLP('http://localhost:8081/evaluate',{value:'The movie is amazing'});
+    expect(data.polarity).toBe('positive');
 });
 
-function simplify(data){
-    const tmp = evaluateNLP({result:data});
-    console.log(tmp);
-    return 'positive';
-    return tmp.polarity;
-}
+
+test('The setence is a negative sentence', async () => {
+    const data = await evaluateNLP('http://localhost:8081/evaluate',{value:'The movie is horrible'});
+    expect(data.polarity).toBe('negative');
+});
