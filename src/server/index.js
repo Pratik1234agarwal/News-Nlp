@@ -1,20 +1,11 @@
 var path = require("path");
 const express = require("express");
-const mockAPIResponse = require("./mockAPI.js");
 var bodyParser = require("body-parser");
 var cors = require("cors");
 
 const dotenv = require("dotenv");
 dotenv.config();
 
-console.log(process.env.API_KEY);
-console.log(process.env.API_ID);
-
-var json = {
-  title: "test json response",
-  message: "this is a message",
-  time: "now",
-};
 
 const app = express();
 app.use(cors());

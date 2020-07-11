@@ -1,4 +1,4 @@
-
+const fetch = require('node-fetch');
 
 async function evaluateNLP(url='/evaluate',data={value:'This is amazing'}){
     const response = await fetch(url,{
